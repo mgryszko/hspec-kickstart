@@ -1,0 +1,22 @@
+name:                hspec-kickstart
+version:             0.1.0
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  default-language:
+    Haskell2010
+
+test-suite spec
+  default-language:    
+    Haskell2010
+  type:
+    exitcode-stdio-1.0
+  build-depends:
+    base >= 4.7 && < 5
+   ,hspec >= 1.11
+  hs-source-dirs:
+    test
+    src
+  main-is:
+    Spec.hs
